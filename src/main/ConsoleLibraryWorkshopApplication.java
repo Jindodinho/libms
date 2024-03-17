@@ -14,13 +14,13 @@ public class ConsoleLibraryWorkshopApplication {
     ConsoleLibraryWorkshopApplication() {
         mainController = SystemController.INSTANCE;
         menus = new LinkedHashMap<>() {{
-            put("Login", this::login);
-            put("Checkout Book", this::checkoutBook);
-            put("Add New Book", this::addNewBook);
-            put("Add Book Copy", this::addBookCopy);
-            put("Add New Member", this::addNewMember);
-            put("Update Existing Member", this::updateExistingMember);
-            put("Checkout Record", this::checkoutRecord);
+//            put("Login", this::login);
+//            put("Checkout Book", this::checkoutBook);
+//            put("Add New Book", this::addNewBook);
+//            put("Add Book Copy", this::addBookCopy);
+//            put("Add New Member", this::addNewMember);
+//            put("Update Existing Member", this::updateExistingMember);
+//            put("Checkout Record", this::checkoutRecord);
         }};
         run();
     }

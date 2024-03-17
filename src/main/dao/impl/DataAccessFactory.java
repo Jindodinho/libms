@@ -6,16 +6,9 @@ import main.exception.DataAccessException;
 
 public class DataAccessFactory {
 
-    private static DataAccessMongo mongoDB;
     private static DataAccessFacade facade;
 
     public static DataAccess createDataAccess(DataAccessType accessType) {
-        if (accessType.equals(DataAccessType.MONGO)) {
-            if (mongoDB == null) {
-                mongoDB = DataAccessMongo.INSTANCE;
-            }
-            return mongoDB;
-        }
         if (accessType.equals(DataAccessType.FACADE)) {
             if (facade == null) {
                 facade = DataAccessFacade.INSTANCE;

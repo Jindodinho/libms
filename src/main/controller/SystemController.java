@@ -14,7 +14,7 @@ import java.util.List;
 public class SystemController implements ControllerInterface {
 
     public static final SystemController INSTANCE = new SystemController();
-    private final DataAccess da = DataAccessFactory.createDataAccess(DataAccessType.MONGO);
+    private final DataAccess da = DataAccessFactory.createDataAccess(DataAccessType.FACADE);
     public Auth currentAuth = Auth.ANONYMOUS;
     public User user = new User();
     private LibraryWorkshopApplication application;
