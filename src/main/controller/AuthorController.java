@@ -9,7 +9,7 @@ import main.model.Book;
 import java.util.List;
 
 public class AuthorController {
-    private final DataAccess da = DataAccessFactory.createDataAccess(DataAccessType.MONGO);
+    private final DataAccess da = DataAccessFactory.createDataAccess(DataAccessType.FACADE);
 
     public AuthorController() {
     }

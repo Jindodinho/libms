@@ -13,7 +13,7 @@ import java.util.List;
 
 public class BookController {
 
-    private final DataAccess da = DataAccessFactory.createDataAccess(DataAccessType.MONGO);
+    private final DataAccess da = DataAccessFactory.createDataAccess(DataAccessType.FACADE);
 
     public List<Book> getListBook(){
         return da.readBooksMap().values().stream().toList();

@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.StringJoiner;
 
 public class MemberController {
-    private final DataAccess da = DataAccessFactory.createDataAccess(DataAccessType.MONGO);
+    private final DataAccess da = DataAccessFactory.createDataAccess(DataAccessType.FACADE);
 
     public List<LibraryMember> getListMember() {
         return da.readMemberMap().values().stream().toList();
