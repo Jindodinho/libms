@@ -5,7 +5,7 @@ import miu.edu.mpp.hdk.enums.Auth;
 import java.io.Serial;
 import java.io.Serializable;
 
-final public class User implements Serializable {
+final public class User extends Person implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 5147265048973262104L;

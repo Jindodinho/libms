@@ -43,6 +43,9 @@ public class DataConstant {
             add(new User("101", "xyz", Auth.LIBRARIAN));
             add(new User("102", "abc", Auth.ADMIN));
             add(new User("103", "111", Auth.BOTH));
+            add(new User("lib", "123", Auth.LIBRARIAN));
+            add(new User("admin", "123", Auth.ADMIN));
+            add(new User("both", "123", Auth.BOTH));
         }
     };
 
