@@ -1,19 +1,11 @@
-A. HDK MEMBERS
-    1. 615944 - "Huy D. Dang"     <dinhhuy.dang@miu.edu>
-    2. 615941 - "Do T. Nguyen"    <thanhdo.nguyen@miu.edu>
-    3. 6159xx - "Khang N. Truong" <nguyenkhang.truong@miu.edu>
-
+A. MEMBERS
 
 B. COURSE INFORMATION
-    - Course ID: CS401-2023-03A-03D-01
-    - Instructor: "Bright Varghese" <bvarghese@miu.edu>
 
 
-C. GIT REPO: https://github.com/ddhuy/HDK-Library-Workshop.git
-   (Please email to dinhhuy.dang@miu.edu with your github account if you want to be a collaborator)
-
+C. GIT REPO:
 
 D. HOW TO BUILD
-    - JDK 19
+    - JDK 21
     - IDE Eclipse / IntelliJ
 
