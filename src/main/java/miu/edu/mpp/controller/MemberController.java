@@ -33,6 +33,20 @@ public class MemberController {
         return joiner.toString();
     }
 
+    public String printCheckoutRecord(LibraryMember member) {
+        if(member == null) return "";
+        StringJoiner joiner = new StringJoiner("\n");
+        HashMap<String, Object> map = da.getDataCollection(DBCollection.CHECKOUT_RECORD);
+        map.values().stream().map(obj -> (CheckoutRecord) obj)
+                .filter(e -> e.getMember().getMemberId().equals(member.getMemberId()))
+                .forEach(ob -> {
+                    CheckoutRecord record = ob;
+                    joiner.add(record.print());
+                    joiner.add("======================================");
+                });
+        return joiner.toString();
+    }
+
     public boolean addNewMember(LibraryMember libraryMember) {
         try {
             da.saveToStorage(DBCollection.MEMBERS, libraryMember);
