@@ -68,7 +68,6 @@ public class CheckoutBookForm extends MainForm {
             comboBook.removeAllItems();
             List<Book> books = bookController.getListBook();
             books.forEach(comboBook::addItem);
-
         }
     }
 }
