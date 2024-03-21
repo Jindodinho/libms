@@ -44,7 +44,7 @@ public class LibraryWorkshopApplication extends JFrame {
     JPanel cardDeck;
     JList<String> linkList;
     JSplitPane splitPane;
-    JLabel message = new JLabel("Welcome to the Library workshop!");
+    JLabel message = new JLabel("Welcome to the MPP Library!");
     Map.Entry<Integer, String> currentMenu = Map.entry(0, MenuItem.LOGIN.getLabel());
     JPanel footer;
     SystemController mainController;
@@ -62,7 +62,7 @@ public class LibraryWorkshopApplication extends JFrame {
             put(MenuItem.UPDATE_EXIST_MEMBER.getLabel(), new UpdateExistMemberForm(mainController));
             put(MenuItem.CHECKOUT_RECORD.getLabel(), new CheckoutRecordForm(mainController));
         }};
-        setTitle("Library Workshop");
+        setTitle("MPP Library");
         initializeWindow();
         setSize(600, 450);
         setUpCards();
