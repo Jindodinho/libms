@@ -40,7 +40,7 @@ public class AddNewMemberForm extends MainForm {
             }
             Address address = new Address(street, city, state, zipCode);
 
-            LibraryMember member = new LibraryMember(Util.generateId(), firstName, lastName, telephone, address);
+            LibraryMember member = new LibraryMember(Util.getInstance().generateId(), firstName, lastName, telephone, address);
             if (memberController.addNewMember(member)) {
                 clearFields();
                 system.refresh();

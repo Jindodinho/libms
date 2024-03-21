@@ -37,7 +37,6 @@ final public class Book implements Serializable {
             BookCopy c = copies.get(i);
             if (c.equals(copy)) {
                 copies.set(i, copy);
-
             }
         }
     }
