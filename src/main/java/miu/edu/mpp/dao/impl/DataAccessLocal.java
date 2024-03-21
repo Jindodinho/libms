@@ -16,15 +16,15 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public final class DataAccessFacade implements DataAccess {
+public final class DataAccessLocal implements DataAccess {
 
-    static final DataAccessFacade INSTANCE = new DataAccessFacade();
+    static final DataAccessLocal INSTANCE = new DataAccessLocal();
     private static final String OUTPUT_DIR = System.getProperty("user.dir")
             + "/src/main/java/miu/edu/mpp/dao/storage"; //for Unix file system
     //			+ "\\src\\dataaccess\\storage"; //for Windows file system
     private static final String DATE_PATTERN = "MM/dd/yyyy";
 
-    private DataAccessFacade() {
+    private DataAccessLocal() {
         this.loadBookMap(DataConstant.bookData());
         this.loadUserMap(DataConstant.userData());
         this.loadMemberMap(DataConstant.libraryMemberData());

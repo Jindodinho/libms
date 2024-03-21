@@ -7,7 +7,7 @@ import miu.edu.mpp.exception.DataAccessException;
 public class DataAccessFactory {
 
     private static DataAccessMongo mongoDB;
-    private static DataAccessFacade facade;
+    private static DataAccessLocal facade;
 
     public static DataAccess createDataAccess(DataAccessType accessType) {
         if (accessType.equals(DataAccessType.MONGO)) {
@@ -18,14 +18,14 @@ public class DataAccessFactory {
         }
         if (accessType.equals(DataAccessType.FACADE)) {
             if (facade == null) {
-                facade = DataAccessFacade.INSTANCE;
+                facade = DataAccessLocal.INSTANCE;
             }
             return facade;
         }
         throw new DataAccessException("Data access not supported!");
     }
 
-    public static DataAccessFacade defaultDataAccess() {
-        return (DataAccessFacade) createDataAccess(DataAccessType.FACADE);
+    public static DataAccessLocal defaultDataAccess() {
+        return (DataAccessLocal) createDataAccess(DataAccessType.FACADE);
     }
 }
